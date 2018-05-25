@@ -5,6 +5,8 @@
     "module": "webpack.config.mjs",
     "main": "webpack.config.js",
     "scripts": {
+        "ng6x": "start http://localhost:4200/",
+        "start": "npm run ng6x",
         "app": "npm run rmrf && webpack -p",
         "prod": "webpack -p",
         "dev": "npm run rmrf && webpack -p -w",

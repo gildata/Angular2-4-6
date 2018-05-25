@@ -43,6 +43,8 @@ $ ng new ng6x
 $ cd ng6x
 
 $ ng serve
+# start http://localhost:4200/
+
 
 # uglifying & tree-shaking
 
