@@ -9,4 +9,4 @@
  * @augments
  * @example
  *
- */}]);
+ */setTimeout(()=>{console.log("ES6 is petty cool!")},0)}]);

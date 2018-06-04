@@ -5,10 +5,14 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack",
-        "app": "webpack -p",
-        "dev": "webpack -w"
+        "start": "webpack --mode production --module-bind js=babel-loader",
+        "build": "webpack --mode production ./src/index.js --output ./build/app.js",
+        "old-app": "webpack -p",
+        "old-dev": "webpack -w",
+        "app": "webpack --mode production",
+        "dev": "webpack --mode development -w"
     },
+    "private": true,
     "bin": {
         "app": "app",
         "dev": "dev"
@@ -27,9 +31,17 @@
     },
     "homepage": "https://github.com/xgqfrms/webpack-4.x-best-practical#readme",
     "dependencies": {
-        "webpack": "^4.10.2"
+        "babel-polyfill": "^6.26.0",
+        "react": "^16.4.0",
+        "react-dom": "^16.4.0",
+        "webpack": "^4.10.2",
+        "whatwg-fetch": "^2.0.4"
     },
     "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
         "webpack-cli": "^3.0.1"
     }
 }

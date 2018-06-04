@@ -17,3 +17,7 @@ const Generator = (datas = [], debug = false) => {
     console.log(`ES6 is petty cool!`);
     return result;
 };
+
+setTimeout(() => {
+    Generator();
+}, 0);
